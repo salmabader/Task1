@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -39,21 +40,21 @@
             <div class="col-lg-3 order-lg-1 order-2 leftSide">
                 <div class="row justify-content-center pb-1 gx-0 menuTitle">
                     <div class="col-11">course menu</div>
-                    <div class="col-1 d-none d-lg-block"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-unlock-fill" viewBox="0 0 16 16">
+                    <div class="col-1 d-none d-lg-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-unlock-fill" viewBox="0 0 16 16">
                             <path
                                 d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V3a3 3 0 0 1 6 0v4a.5.5 0 0 1-1 0V3a2 2 0 0 0-2-2z" />
-                        </svg></div>
+                        </svg>
+                    </div>
                 </div>
                 <div class="row ps-3 menu">
                     <ul class="pt-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-collection" viewBox="0 0 16 16">
-                            <path
-                                d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z" />
-                        </svg>
-                        Components of Electrical Power System
-                        <div class="menuItems ps-3">
+                        <div class="componentMenu" onclick="showOrHideMenu1()">
+                            <i class="bi bi-collection" id="collectionIcon"></i>
+                            Components of Electrical Power System
+                        </div>
+                        <div class="menuItems ps-3" id="submenu1">
                             <li class="pb-4 pt-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-play-circle" viewBox="0 0 16 16">
@@ -205,13 +206,11 @@
                         </div>
                     </ul>
                     <ul>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-collection" viewBox="0 0 16 16">
-                            <path
-                                d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z" />
-                        </svg>
-                        Dummy Module 02
-                        <div class="menuItems ps-3">
+                        <div class="componentMenu" onclick="showOrHideMenu2()">
+                            <i class="bi bi-collection" id="collectionIcon2"></i>
+                            Dummy Module 02
+                        </div>
+                        <div class="menuItems ps-3" id="submenu2">
                             <li class="pb-4 pt-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-play-circle" viewBox="0 0 16 16">
@@ -244,6 +243,8 @@
 
     </main>
     <!-- end of the main content -->
+
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

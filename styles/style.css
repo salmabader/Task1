@@ -61,6 +61,14 @@ header {
     list-style-type: none;
 }
 
+.componentMenu {
+    cursor: pointer;
+}
+
+.componentMenu:hover {
+    color: #045fe6;
+}
+
 /* .verticalLine {
     width: 2px;
     background: #aaa;
