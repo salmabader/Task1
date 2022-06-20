@@ -1,3 +1,6 @@
+const player = new Plyr(document.getElementById('player'));
+
+// to show the subheadings in the first list
 function showOrHideMenu1() {
     let menu = document.getElementById("submenu1");
     let icon = document.getElementById("collectionIcon");
@@ -10,6 +13,8 @@ function showOrHideMenu1() {
         icon.className = "bi-collection-fill";
     }
 }
+
+// to show the subheadings in the second list
 function showOrHideMenu2() {
     let menu = document.getElementById("submenu2");
     let icon = document.getElementById("collectionIcon2");
@@ -22,6 +27,8 @@ function showOrHideMenu2() {
         icon.className = "bi-collection-fill";
     }
 }
+
+// handle the lock icon for menu
 function sideMenu() {
     let sideMenu = document.getElementById("sideMenu");
     let icon = document.getElementById("lock");
@@ -37,12 +44,23 @@ function sideMenu() {
     }
     sideMenu.style.overflowX = "hidden";
 }
+
+// handle the first list items
 function selectedItem(item) {
     switch (item) {
         case "item1":
-            document.getElementById("video1").style.display = "block";
+            document.getElementById("player").style.display = "block";
+            player.source = {
+                type: 'video',
+                sources: [
+                    {
+                        src: 'https://youtu.be/3l4fQoZh2DE',
+                        provider: 'youtube',
+                    },
+                ],
+            };
             document.getElementById("item1").style.color = "#00b0f1";
-        case "item2":
-
     }
 }
+
+
