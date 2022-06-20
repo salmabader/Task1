@@ -22,3 +22,12 @@ function showOrHideMenu2() {
         icon.className = "bi-collection-fill";
     }
 }
+function sideMenu() {
+    let icon = document.getElementById("lock");
+    if (icon.className === "bi bi-unlock-fill") {
+        icon.className = "bi bi-lock-fill";
+    }
+    else {
+        icon.className = "bi bi-unlock-fill"
+    }
+}

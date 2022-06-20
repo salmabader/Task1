@@ -61,7 +61,8 @@ header {
     list-style-type: none;
 }
 
-.componentMenu {
+.componentMenu,
+#lock {
     cursor: pointer;
 }
 
