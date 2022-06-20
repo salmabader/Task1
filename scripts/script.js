@@ -23,11 +23,26 @@ function showOrHideMenu2() {
     }
 }
 function sideMenu() {
+    let sideMenu = document.getElementById("sideMenu");
     let icon = document.getElementById("lock");
     if (icon.className === "bi bi-unlock-fill") {
         icon.className = "bi bi-lock-fill";
+        sideMenu.style.height = "540px";
+        sideMenu.style.overflow = "auto";
     }
     else {
+        sideMenu.style.overflow = "auto";
+        sideMenu.style.height = "auto";
         icon.className = "bi bi-unlock-fill"
+    }
+    sideMenu.style.overflowX = "hidden";
+}
+function selectedItem(item) {
+    switch (item) {
+        case "item1":
+            document.getElementById("video1").style.display = "block";
+            document.getElementById("item1").style.color = "#00b0f1";
+        case "item2":
+
     }
 }

@@ -55,10 +55,17 @@ header {
 
 .leftSide {
     background-color: white;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 
 .menu li {
     list-style-type: none;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    color: #00b0f1;
 }
 
 .componentMenu,
@@ -70,13 +77,16 @@ header {
     color: #045fe6;
 }
 
-/* .verticalLine {
-    width: 2px;
-    background: #aaa;
-    height: 100%;
-    position: absolute;
-    left: 39px;
-    top: 15rem;
-    padding-top: 3px;
-    padding-bottom: 2px;
-} */
+.continueBtn {
+    padding: 10px 35px 10px 35px;
+    border-radius: 16px;
+    margin-top: 40px;
+    float: right;
+    box-shadow: 2px 2px 0 0 rgb(0 0 0 / 10%);
+    background-color: #045fe6;
+    border: 0;
+}
+
+.continueBtn:hover {
+    background-color: #008cf9;
+}
