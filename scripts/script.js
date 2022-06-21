@@ -58,6 +58,8 @@ function selectedItem(item) {
     let className = "";
     switch (item) {
         case "item1":
+            document.getElementById('quizes').style.display = "none";
+            document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -77,6 +79,8 @@ function selectedItem(item) {
             break;
 
         case "item2":
+            document.getElementById('quizes').style.display = "none";
+            document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -96,6 +100,8 @@ function selectedItem(item) {
             break;
 
         case "item3":
+            document.getElementById('quizes').style.display = "none";
+            document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -115,6 +121,8 @@ function selectedItem(item) {
             break;
 
         case "item4":
+            document.getElementById('videos').style.display = "none";
+            document.getElementById('quizes').style.display = "block";
             document.getElementById("item4").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 4) continue;
@@ -124,6 +132,8 @@ function selectedItem(item) {
             break;
 
         case "item5":
+            document.getElementById('quizes').style.display = "none";
+            document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -152,6 +162,8 @@ function selectedItem(item) {
             break;
 
         case "item7":
+            document.getElementById('quizes').style.display = "none";
+            document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -171,6 +183,8 @@ function selectedItem(item) {
             break;
 
         case "item8":
+            document.getElementById('quizes').style.display = "none";
+            document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -217,6 +231,8 @@ function selectedItem(item) {
             break;
 
         case "item12":
+            document.getElementById('quizes').style.display = "none";
+            document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -236,6 +252,8 @@ function selectedItem(item) {
             break;
 
         case "item13":
+            document.getElementById('quizes').style.display = "none";
+            document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -282,6 +300,8 @@ function selectedItem(item) {
             break;
 
         case "item17":
+            document.getElementById('quizes').style.display = "none";
+            document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -310,6 +330,8 @@ function selectedItem(item) {
             break;
 
         case "item19":
+            document.getElementById('quizes').style.display = "none";
+            document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -329,6 +351,8 @@ function selectedItem(item) {
             break;
 
         case "item20":
+            document.getElementById('quizes').style.display = "none";
+            document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
