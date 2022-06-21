@@ -1,5 +1,13 @@
-const player = new Plyr(document.getElementById('player'));
-
+const player1 = new Plyr(document.getElementById('player1'));
+player1.source = {
+    type: 'video',
+    sources: [
+        {
+            src: 'https://youtu.be/3l4fQoZh2DE',
+            provider: 'youtube',
+        },
+    ],
+};
 // to show the subheadings in the first list
 function showOrHideMenu1() {
     let menu = document.getElementById("submenu1");
@@ -47,10 +55,10 @@ function sideMenu() {
 
 // handle the first list items
 function selectedItem(item) {
+    let className = "";
     switch (item) {
         case "item1":
-            document.getElementById("player").style.display = "block";
-            player.source = {
+            player1.source = {
                 type: 'video',
                 sources: [
                     {
@@ -58,8 +66,286 @@ function selectedItem(item) {
                         provider: 'youtube',
                     },
                 ],
+                autoplay: true,
             };
-            document.getElementById("item1").style.color = "#00b0f1";
+            document.getElementById("item1").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 1) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item2":
+            player1.source = {
+                type: 'video',
+                sources: [
+                    {
+                        src: 'https://youtu.be/IS5wMv_ILXE',
+                        provider: 'youtube',
+                    },
+                ],
+                autoplay: true,
+            };
+            document.getElementById("item2").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 2) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item3":
+            player1.source = {
+                type: 'video',
+                sources: [
+                    {
+                        src: 'https://youtu.be/6hloc6xhpa0',
+                        provider: 'youtube',
+                    },
+                ],
+                autoplay: true,
+            };
+            document.getElementById("item3").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 3) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item4":
+            document.getElementById("item4").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 4) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item5":
+            player1.source = {
+                type: 'video',
+                sources: [
+                    {
+                        src: 'https://youtu.be/j0zf-otH3cY',
+                        provider: 'youtube',
+                    },
+                ],
+                autoplay: true,
+            };
+            document.getElementById("item5").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 5) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item6":
+            document.getElementById("item6").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 6) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item7":
+            player1.source = {
+                type: 'video',
+                sources: [
+                    {
+                        src: 'https://youtu.be/inC-Q9LGQhE',
+                        provider: 'youtube',
+                    },
+                ],
+                autoplay: true,
+            };
+            document.getElementById("item7").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 7) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item8":
+            player1.source = {
+                type: 'video',
+                sources: [
+                    {
+                        src: 'https://youtu.be/fxgcD7D2amY',
+                        provider: 'youtube',
+                    },
+                ],
+                autoplay: true,
+            };
+            document.getElementById("item8").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 8) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item9":
+            document.getElementById("item9").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 9) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item10":
+            document.getElementById("item10").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 10) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item11":
+            document.getElementById("item11").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 11) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item12":
+            player1.source = {
+                type: 'video',
+                sources: [
+                    {
+                        src: 'https://youtu.be/6hloc6xhpa0',
+                        provider: 'youtube',
+                    },
+                ],
+                autoplay: true,
+            };
+            document.getElementById("item12").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 12) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item13":
+            player1.source = {
+                type: 'video',
+                sources: [
+                    {
+                        src: 'https://youtu.be/IS5wMv_ILXE',
+                        provider: 'youtube',
+                    },
+                ],
+                autoplay: true,
+            };
+            document.getElementById("item13").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 13) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item14":
+            document.getElementById("item14").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 14) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item15":
+            document.getElementById("item15").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 15) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item16":
+            document.getElementById("item16").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 16) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item17":
+            player1.source = {
+                type: 'video',
+                sources: [
+                    {
+                        src: 'https://youtu.be/6hloc6xhpa0',
+                        provider: 'youtube',
+                    },
+                ],
+                autoplay: true,
+            };
+            document.getElementById("item17").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 17) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item18":
+            document.getElementById("item18").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 18) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item19":
+            player1.source = {
+                type: 'video',
+                sources: [
+                    {
+                        src: 'https://youtu.be/IS5wMv_ILXE',
+                        provider: 'youtube',
+                    },
+                ],
+                autoplay: true,
+            };
+            document.getElementById("item19").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 19) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
+
+        case "item20":
+            player1.source = {
+                type: 'video',
+                sources: [
+                    {
+                        src: 'https://youtu.be/6hloc6xhpa0',
+                        provider: 'youtube',
+                    },
+                ],
+                autoplay: true,
+            };
+            document.getElementById("item20").classList.add("active");
+            for (let i = 1; i <= 20; i++) {
+                if (i == 20) continue;
+                className = "item" + i;
+                document.getElementById(className).classList.remove("active");
+            }
+            break;
     }
 }
 
