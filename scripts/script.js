@@ -8,6 +8,7 @@ player1.source = {
         },
     ],
 };
+document.getElementById('quizes').style.display = "none";
 // to show the subheadings in the first list
 function showOrHideMenu1() {
     let menu = document.getElementById("submenu1");
