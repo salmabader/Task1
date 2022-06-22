@@ -3,6 +3,9 @@ html {
     font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode';
     background-color: #f1f1f1;
     overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 header {
@@ -51,6 +54,7 @@ header {
     padding-top: 20px;
     text-transform: uppercase;
     border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
 }
 
 .leftSide {
@@ -115,4 +119,229 @@ header {
 
 .hideContent {
     display: none;
+}
+
+.question {
+    display: inline-block;
+    background: #fff;
+    color: #60636A;
+    -webkit-box-shadow: 4px 4px 1px 1px rgb(0 0 0 / 10%);
+    box-shadow: 4px 4px 7px 2px rgb(0 0 0 / 10%);
+    text-decoration: none;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 22px;
+    margin-left: 70px;
+    margin-top: 70px;
+    position: relative;
+    padding: 45px;
+    padding-left: 60px;
+    margin-bottom: 20px;
+}
+
+.qicon {
+    position: absolute;
+    top: -50px;
+    left: -40px;
+}
+
+.st1 {
+    fill: #00b0f1;
+}
+
+.st0 {
+    fill: white;
+}
+
+.answers {
+    color: #60636A;
+    font-size: 18px;
+    padding: 15px 15px 0 90px;
+}
+
+.radioButtons {
+    padding: 7px;
+}
+
+
+.submitBtn {
+    box-shadow: 2px 2px 0 0 rgb(0 0 0 / 10%);
+    text-transform: uppercase;
+    padding: 10px 25px 10px 25px;
+    border-radius: 16px;
+    border: 0;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.submitBtn:hover {
+    background-color: #00b0f1;
+    color: white;
+}
+
+.hint {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px 30px 20px 40px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    text-align: left;
+    color: #045fe6;
+    float: right;
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    right: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+:where(.hint, .instruction)>i {
+    font-family: impact;
+    border-radius: 100%;
+    color: white;
+    padding: 7px 15px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -30px;
+    color: #045fe6;
+}
+
+.submitBtn {
+    background-color: white;
+}
+
+iframe {
+    padding: 10px;
+}
+
+/* -------------Radio button style------------ */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+    line-height: 30px;
+    display: inline-block;
+    color: #666;
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    background: #00b0f1;
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* -----------------map.html----------------- */
+.txt {
+    color: #60636A;
+    font-size: 18px;
+    width: 70%;
+    line-height: 20px;
+}
+
+.instruction {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px 20px 20px 25px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    text-align: left;
+    color: #045fe6;
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    right: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.markerButtons {
+    display: grid;
+    max-width: 350px;
+    grid-template-columns: auto auto;
+    max-height: 0%;
+    gap: 10px;
+}
+
+.markerButtons .btn {
+    padding: 10px 20px 10px 20px;
+    text-align: left;
+    box-shadow: 2px 2px 0 0 rgb(0 0 0 / 10%);
+    border: 0;
+}
+
+#steam:hover {
+    background-color: rgb(246, 139, 46);
+    color: white;
+}
+
+#gas:hover {
+    background-color: rgb(204, 65, 65);
+    color: white;
+}
+
+#diesel:hover {
+    background-color: rgb(0, 84, 163);
+    color: white;
+}
+
+#combined:hover {
+    background-color: rgb(66, 174, 188);
+    color: white;
+}
+
+#diesel-gas:hover {
+    background-color: rgb(155, 206, 59);
+    color: white;
+}
+
+#showAll:hover {
+    background-color: rgb(96, 99, 106);
+    color: white;
+}
+
+:where(#steam, #gas, #diesel, #combined, #diesel-gas, #showAll):hover>i {
+    color: white !important;
 }

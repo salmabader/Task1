@@ -8,6 +8,7 @@ player1.source = {
         },
     ],
 };
+
 document.getElementById('quizes').style.display = "none";
 // to show the subheadings in the first list
 function showOrHideMenu1() {
@@ -56,7 +57,7 @@ function sideMenu() {
 
 // handle the first list items
 function selectedItem(item) {
-    let className = "";
+    let id = "";
     switch (item) {
         case "item1":
             document.getElementById('quizes').style.display = "none";
@@ -74,8 +75,8 @@ function selectedItem(item) {
             document.getElementById("item1").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 1) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
@@ -95,8 +96,8 @@ function selectedItem(item) {
             document.getElementById("item2").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 2) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
@@ -116,19 +117,20 @@ function selectedItem(item) {
             document.getElementById("item3").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 3) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
         case "item4":
             document.getElementById('videos').style.display = "none";
             document.getElementById('quizes').style.display = "block";
+            document.getElementById("quizes").src = "quiz1.html";
             document.getElementById("item4").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 4) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
@@ -148,8 +150,8 @@ function selectedItem(item) {
             document.getElementById("item5").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 5) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
@@ -157,8 +159,8 @@ function selectedItem(item) {
             document.getElementById("item6").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 6) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
@@ -178,8 +180,8 @@ function selectedItem(item) {
             document.getElementById("item7").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 7) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
@@ -199,8 +201,8 @@ function selectedItem(item) {
             document.getElementById("item8").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 8) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
@@ -208,17 +210,20 @@ function selectedItem(item) {
             document.getElementById("item9").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 9) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
         case "item10":
             document.getElementById("item10").classList.add("active");
+            document.getElementById('videos').style.display = "none";
+            document.getElementById('quizes').style.display = "block";
+            document.getElementById("quizes").src = "map.html";
             for (let i = 1; i <= 20; i++) {
                 if (i == 10) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
@@ -226,8 +231,8 @@ function selectedItem(item) {
             document.getElementById("item11").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 11) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
@@ -247,8 +252,8 @@ function selectedItem(item) {
             document.getElementById("item12").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 12) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
@@ -268,8 +273,8 @@ function selectedItem(item) {
             document.getElementById("item13").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 13) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
@@ -277,8 +282,8 @@ function selectedItem(item) {
             document.getElementById("item14").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 14) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
@@ -286,8 +291,8 @@ function selectedItem(item) {
             document.getElementById("item15").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 15) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
@@ -295,8 +300,8 @@ function selectedItem(item) {
             document.getElementById("item16").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 16) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
@@ -316,8 +321,8 @@ function selectedItem(item) {
             document.getElementById("item17").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 17) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
@@ -325,8 +330,8 @@ function selectedItem(item) {
             document.getElementById("item18").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 18) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
@@ -346,8 +351,8 @@ function selectedItem(item) {
             document.getElementById("item19").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 19) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
 
@@ -367,11 +372,9 @@ function selectedItem(item) {
             document.getElementById("item20").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 20) continue;
-                className = "item" + i;
-                document.getElementById(className).classList.remove("active");
+                id = "item" + i;
+                document.getElementById(id).classList.remove("active");
             }
             break;
     }
 }
-
-

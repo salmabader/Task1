@@ -5,12 +5,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
+    <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
     <title>Document</title>
 </head>
 
-<body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas beatae, iure mollitia corporis vero dolorum vel nam
-    </p>
+<body style="background-color: #dedede;">
+    <div class="question">
+        <div class="qicon">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px"
+                viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                <circle class="st1" cx="44.1" cy="43.8" r="40.1" />
+                <polyline class="st1" points="63.3,73.4 90,86 71.8,62.5 " />
+                <g>
+                    <path class="st0"
+                        d="M46.1,51.2h-4.7c0-0.1-0.2-0.5-0.5-1.2c-0.3-0.7-0.4-1.3-0.4-1.9c0-1,0.1-2,0.4-3c0.3-0.9,0.7-1.8,1.3-2.6
+            c0.6-0.8,1.6-2.1,3.3-3.9S48,35.2,48,34c0-2.3-1.5-3.4-4.5-3.4c-1.4,0-3,0.7-4.5,2.2l-2.5-4.7c2.1-1.6,4.9-2.5,8.3-2.5
+            c2.6,0,4.8,0.7,6.6,2.2c1.8,1.5,2.6,3.4,2.6,5.8c0,1.7-0.3,3.1-1,4.2c-0.6,1.1-1.8,2.5-3.4,4c-1.6,1.5-2.7,2.8-3.2,3.9
+            s-0.7,2.1-0.7,3.4C45.8,49.4,45.9,50.1,46.1,51.2z M44.1,54.5c1.1,0,2,0.4,2.8,1.2c0.8,0.8,1.2,1.7,1.2,2.8c0,1.1-0.4,2.1-1.2,2.8
+            c-0.8,0.8-1.7,1.2-2.8,1.2c-1.1,0-2.1-0.4-2.8-1.2s-1.2-1.7-1.2-2.8c0-1.1,0.4-2.1,1.2-2.8S43,54.5,44.1,54.5z" />
+                </g>
+            </svg>
+        </div>
+        <p>Which of the following statements is correct for a three-phase system?</p>
+    </div>
+    <div class="answers">
+        <div class="radioButtons">
+            <input type="radio" name="answers" id="radio1" onclick="enableButton()"> <label for="radio1">The power
+                delivered to a three-phase
+                load is pulsating in
+                nature.</label>
+        </div>
+        <div class="radioButtons">
+            <input type="radio" name="answers" id="radio2" onclick="enableButton()"> <label for="radio2">Power per
+                kilogram of metal from a
+                three-phase machine is less as
+                compared to a single-phase machine.</label>
+        </div>
+        <div class="radioButtons">
+            <input type="radio" name="answers" id="radio3" onclick="enableButton()"> <label for="radio3">A
+                three-phase machine does not
+                require a starter.</label>
+        </div>
+        <div class="radioButtons">
+            <input type="radio" name="answers" id="radio4" onclick="enableButton()"> <label for="radio4">Mechanical
+                vibrations in three-phase
+                motors are more as compared to
+                single phase motors.</label>
+        </div>
+    </div>
+    <button class="btn btn-light submitBtn" data-bs-toggle="modal" data-bs-target="#exampleModal" id="submitBtn"
+        onclick="checkAnswer(1)" disabled>Submit</button>
+
+    <div class="hint">
+        <i class="bi bi-exclamation-circle-fill"></i>
+        <p>Select the correct option and click or tap Submit.</p>
+    </div>
+    <script src="scripts/quiz1.js"></script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="msg"></div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
