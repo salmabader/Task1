@@ -97,17 +97,6 @@ header {
     background-color: #008cf9;
 }
 
-.verticalLine {
-    width: 2px;
-    background: #aaa;
-    height: 100%;
-    position: absolute;
-    left: -21px;
-    top: 20px;
-    padding-top: 3px;
-    padding-bottom: 2px;
-}
-
 .videos {
     max-width: 98%;
     padding: 10px 0px 25px 25px;
