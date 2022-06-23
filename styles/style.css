@@ -345,3 +345,33 @@ iframe {
 :where(#steam, #gas, #diesel, #combined, #diesel-gas, #showAll):hover>i {
     color: white !important;
 }
+
+.selected,
+.selected i {
+    color: white !important;
+    cursor: default;
+}
+
+#steam.selected {
+    background-color: rgb(246, 139, 46);
+}
+
+#gas.selected {
+    background-color: rgb(204, 65, 65);
+}
+
+#diesel.selected {
+    background-color: rgb(0, 84, 163);
+}
+
+#combined.selected {
+    background-color: rgb(66, 174, 188);
+}
+
+#diesel-gas.selected {
+    background-color: rgb(155, 206, 59);
+}
+
+#showAll.selected {
+    background-color: rgb(96, 99, 106);
+}
