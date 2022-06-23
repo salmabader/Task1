@@ -90,10 +90,12 @@ header {
     float: right;
     box-shadow: 2px 2px 0 0 rgb(0 0 0 / 10%);
     background-color: #045fe6;
+    color: #fff;
     border: 0;
 }
 
 .continueBtn:hover {
+    color: #fff;
     background-color: #008cf9;
 }
 
@@ -363,4 +365,22 @@ iframe {
 
 #showAll.selected {
     background-color: rgb(96, 99, 106);
+}
+
+/* -----------------component.html----------------- */
+#Path_1:hover,
+#Path_28:hover,
+#Path_13:hover,
+#Path_19:hover,
+#Path_17:hover,
+#Path_14:hover,
+#Path_11:hover,
+#Path_29:hover,
+#Path_7:hover,
+#rect2:hover,
+#rect1:hover,
+#rect3,
+#rect4 {
+    fill: #fcbf49;
+    cursor: pointer;
 }

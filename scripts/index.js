@@ -126,6 +126,7 @@ function selectedItem(item) {
             document.getElementById('videos').style.display = "none";
             document.getElementById('quizes').style.display = "block";
             document.getElementById("quizes").src = "quiz1.html";
+            document.getElementById("quizes").height = "60%";
             document.getElementById("item4").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 4) continue;
@@ -220,6 +221,7 @@ function selectedItem(item) {
             document.getElementById('videos').style.display = "none";
             document.getElementById('quizes').style.display = "block";
             document.getElementById("quizes").src = "map.html";
+            document.getElementById("quizes").height = "70%";
             for (let i = 1; i <= 20; i++) {
                 if (i == 10) continue;
                 id = "item" + i;
@@ -289,6 +291,10 @@ function selectedItem(item) {
 
         case "item15":
             document.getElementById("item15").classList.add("active");
+            document.getElementById('videos').style.display = "none";
+            document.getElementById('quizes').style.display = "block";
+            document.getElementById("quizes").src = "component.html";
+            document.getElementById("quizes").height = "80%";
             for (let i = 1; i <= 20; i++) {
                 if (i == 15) continue;
                 id = "item" + i;
