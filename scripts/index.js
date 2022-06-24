@@ -9,7 +9,7 @@ player1.source = {
     ],
 };
 
-document.getElementById('quizes').style.display = "none";
+document.getElementById('myIframe').style.display = "none";
 // to show the subheadings in the first list
 function showOrHideMenu1() {
     let menu = document.getElementById("submenu1");
@@ -60,7 +60,7 @@ function selectedItem(item) {
     let id = "";
     switch (item) {
         case "item1":
-            document.getElementById('quizes').style.display = "none";
+            document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
@@ -81,7 +81,7 @@ function selectedItem(item) {
             break;
 
         case "item2":
-            document.getElementById('quizes').style.display = "none";
+            document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
@@ -102,7 +102,7 @@ function selectedItem(item) {
             break;
 
         case "item3":
-            document.getElementById('quizes').style.display = "none";
+            document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
@@ -124,9 +124,9 @@ function selectedItem(item) {
 
         case "item4":
             document.getElementById('videos').style.display = "none";
-            document.getElementById('quizes').style.display = "block";
-            document.getElementById("quizes").src = "quiz1.html";
-            document.getElementById("quizes").height = "60%";
+            document.getElementById('myIframe').style.display = "block";
+            document.getElementById("myIframe").src = "quiz1.html";
+            document.getElementById("myIframe").height = "60%";
             document.getElementById("item4").classList.add("active");
             for (let i = 1; i <= 20; i++) {
                 if (i == 4) continue;
@@ -136,7 +136,7 @@ function selectedItem(item) {
             break;
 
         case "item5":
-            document.getElementById('quizes').style.display = "none";
+            document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
@@ -166,7 +166,7 @@ function selectedItem(item) {
             break;
 
         case "item7":
-            document.getElementById('quizes').style.display = "none";
+            document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
@@ -187,7 +187,7 @@ function selectedItem(item) {
             break;
 
         case "item8":
-            document.getElementById('quizes').style.display = "none";
+            document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
@@ -219,9 +219,9 @@ function selectedItem(item) {
         case "item10":
             document.getElementById("item10").classList.add("active");
             document.getElementById('videos').style.display = "none";
-            document.getElementById('quizes').style.display = "block";
-            document.getElementById("quizes").src = "map.html";
-            document.getElementById("quizes").height = "70%";
+            document.getElementById('myIframe').style.display = "block";
+            document.getElementById("myIframe").src = "map.html";
+            document.getElementById("myIframe").height = "70%";
             for (let i = 1; i <= 20; i++) {
                 if (i == 10) continue;
                 id = "item" + i;
@@ -239,7 +239,7 @@ function selectedItem(item) {
             break;
 
         case "item12":
-            document.getElementById('quizes').style.display = "none";
+            document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
@@ -260,7 +260,7 @@ function selectedItem(item) {
             break;
 
         case "item13":
-            document.getElementById('quizes').style.display = "none";
+            document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
@@ -292,9 +292,9 @@ function selectedItem(item) {
         case "item15":
             document.getElementById("item15").classList.add("active");
             document.getElementById('videos').style.display = "none";
-            document.getElementById('quizes').style.display = "block";
-            document.getElementById("quizes").src = "component.html";
-            document.getElementById("quizes").height = "80%";
+            document.getElementById('myIframe').style.display = "block";
+            document.getElementById("myIframe").src = "component.html";
+            document.getElementById("myIframe").height = "80%";
             for (let i = 1; i <= 20; i++) {
                 if (i == 15) continue;
                 id = "item" + i;
@@ -312,7 +312,7 @@ function selectedItem(item) {
             break;
 
         case "item17":
-            document.getElementById('quizes').style.display = "none";
+            document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
@@ -342,7 +342,7 @@ function selectedItem(item) {
             break;
 
         case "item19":
-            document.getElementById('quizes').style.display = "none";
+            document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
@@ -363,7 +363,7 @@ function selectedItem(item) {
             break;
 
         case "item20":
-            document.getElementById('quizes').style.display = "none";
+            document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
