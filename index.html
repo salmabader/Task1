@@ -18,6 +18,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
+    <script>var i = 2;</script>
 </head>
 
 <body>
@@ -154,13 +155,19 @@
                     <div id="content1"><video id="player1" playsinline controls></video></div>
                 </div>
                 <iframe id="quizes" src="" width="100%"></iframe>
-                <button class="btn continueBtn">Continue</button>
+                <button class="continueBtn" id="continueBtn">Continue</button>
             </div>
         </div>
         <!-- <div class="spinner-border" id="h"></div> -->
     </main>
     <!-- end of the main content -->
     <script src="scripts/index.js"></script>
+    <script>
+        $('#continueBtn').click(function () {
+            $('#item' + i).click();
+            i = i + 1;
+        });
+    </script>
 </body>
 
 </html>
