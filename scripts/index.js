@@ -57,9 +57,9 @@ function sideMenu() {
 
 // handle the first list items
 function selectedItem(item) {
-    let id = "";
     switch (item) {
         case "item1":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
@@ -73,14 +73,11 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("item1").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 1) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(1);
             break;
 
         case "item2":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
@@ -94,14 +91,11 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("item2").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 2) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(2);
             break;
 
         case "item3":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
@@ -115,28 +109,22 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("item3").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 3) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(3);
             break;
 
         case "item4":
             player1.stop();
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('videos').style.display = "none";
             document.getElementById('myIframe').style.display = "block";
             document.getElementById("myIframe").src = "quiz1.html";
             document.getElementById("myIframe").height = "60%";
             document.getElementById("item4").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 4) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(4);
             break;
 
         case "item5":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
@@ -150,23 +138,17 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("item5").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 5) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(5);
             break;
 
         case "item6":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById("item6").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 6) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(6);
             break;
 
         case "item7":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
@@ -180,14 +162,11 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("item7").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 7) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(7);
             break;
 
         case "item8":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
@@ -201,46 +180,34 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("item8").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 8) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(8);
             break;
 
         case "item9":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById("item9").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 9) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(9);
             break;
 
         case "item10":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             player1.stop();
             document.getElementById("item10").classList.add("active");
             document.getElementById('videos').style.display = "none";
             document.getElementById('myIframe').style.display = "block";
             document.getElementById("myIframe").src = "map.html";
             document.getElementById("myIframe").height = "70%";
-            for (let i = 1; i <= 20; i++) {
-                if (i == 10) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(10);
             break;
 
         case "item11":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById("item11").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 11) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(11);
             break;
 
         case "item12":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
@@ -254,14 +221,11 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("item12").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 12) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(12);
             break;
 
         case "item13":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
@@ -275,46 +239,34 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("item13").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 13) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(13);
             break;
 
         case "item14":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById("item14").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 14) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(14);
             break;
 
         case "item15":
             player1.stop();
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById("item15").classList.add("active");
             document.getElementById('videos').style.display = "none";
             document.getElementById('myIframe').style.display = "block";
             document.getElementById("myIframe").src = "component.html";
             document.getElementById("myIframe").height = "80%";
-            for (let i = 1; i <= 20; i++) {
-                if (i == 15) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(15);
             break;
 
         case "item16":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById("item16").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 16) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(16);
             break;
 
         case "item17":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
@@ -328,23 +280,17 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("item17").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 17) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(17);
             break;
 
         case "item18":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById("item18").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 18) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(18);
             break;
 
         case "item19":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
@@ -358,14 +304,11 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("item19").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 19) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(19);
             break;
 
         case "item20":
+            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
@@ -379,11 +322,17 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("item20").classList.add("active");
-            for (let i = 1; i <= 20; i++) {
-                if (i == 20) continue;
-                id = "item" + i;
-                document.getElementById(id).classList.remove("active");
-            }
+            deselecteItems(20);
             break;
     }
+}
+
+function deselecteItems(order) {
+    let id = "";
+    for (let i = 1; i <= 20; i++) {
+        if (i == order) continue;
+        id = "item" + i;
+        document.getElementById(id).classList.remove("active");
+    }
+
 }
