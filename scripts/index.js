@@ -55,6 +55,16 @@ function sideMenu() {
     sideMenu.style.overflowX = "hidden";
 }
 
+// handle continue button
+function goNext() {
+    var ele = document.getElementsByClassName('active');
+    if (ele[0].id == "20") {
+        $('#continueBtn').hide();
+    }
+    let next = parseInt(ele[0].id) + 1;
+    $('#' + next).click();
+}
+
 // handle the first list items
 function selectedItem(item) {
     switch (item) {
@@ -62,6 +72,7 @@ function selectedItem(item) {
             $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
+            document.getElementById('continueBtn').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -72,7 +83,7 @@ function selectedItem(item) {
                 ],
                 autoplay: true,
             };
-            document.getElementById("item1").classList.add("active");
+            document.getElementById("1").classList.add("active");
             deselecteItems(1);
             break;
 
@@ -80,6 +91,7 @@ function selectedItem(item) {
             $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
+            document.getElementById('continueBtn').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -90,7 +102,7 @@ function selectedItem(item) {
                 ],
                 autoplay: true,
             };
-            document.getElementById("item2").classList.add("active");
+            document.getElementById("2").classList.add("active");
             deselecteItems(2);
             break;
 
@@ -98,6 +110,7 @@ function selectedItem(item) {
             $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
+            document.getElementById('continueBtn').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -108,7 +121,7 @@ function selectedItem(item) {
                 ],
                 autoplay: true,
             };
-            document.getElementById("item3").classList.add("active");
+            document.getElementById("3").classList.add("active");
             deselecteItems(3);
             break;
 
@@ -117,9 +130,10 @@ function selectedItem(item) {
             $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('videos').style.display = "none";
             document.getElementById('myIframe').style.display = "block";
+            document.getElementById('continueBtn').style.display = "block";
             document.getElementById("myIframe").src = "quiz1.html";
             document.getElementById("myIframe").height = "60%";
-            document.getElementById("item4").classList.add("active");
+            document.getElementById("4").classList.add("active");
             deselecteItems(4);
             break;
 
@@ -127,6 +141,7 @@ function selectedItem(item) {
             $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
+            document.getElementById('continueBtn').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -137,13 +152,14 @@ function selectedItem(item) {
                 ],
                 autoplay: true,
             };
-            document.getElementById("item5").classList.add("active");
+            document.getElementById("5").classList.add("active");
             deselecteItems(5);
             break;
 
         case "item6":
             $('html, body').animate({ scrollTop: '0px' }, 500);
-            document.getElementById("item6").classList.add("active");
+            document.getElementById("6").classList.add("active");
+            document.getElementById('continueBtn').style.display = "block";
             deselecteItems(6);
             break;
 
@@ -151,6 +167,7 @@ function selectedItem(item) {
             $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
+            document.getElementById('continueBtn').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -161,7 +178,7 @@ function selectedItem(item) {
                 ],
                 autoplay: true,
             };
-            document.getElementById("item7").classList.add("active");
+            document.getElementById("7").classList.add("active");
             deselecteItems(7);
             break;
 
@@ -169,6 +186,7 @@ function selectedItem(item) {
             $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
+            document.getElementById('continueBtn').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -179,22 +197,24 @@ function selectedItem(item) {
                 ],
                 autoplay: true,
             };
-            document.getElementById("item8").classList.add("active");
+            document.getElementById("8").classList.add("active");
             deselecteItems(8);
             break;
 
         case "item9":
             $('html, body').animate({ scrollTop: '0px' }, 500);
-            document.getElementById("item9").classList.add("active");
+            document.getElementById("9").classList.add("active");
+            document.getElementById('continueBtn').style.display = "block";
             deselecteItems(9);
             break;
 
         case "item10":
             $('html, body').animate({ scrollTop: '0px' }, 500);
             player1.stop();
-            document.getElementById("item10").classList.add("active");
+            document.getElementById("10").classList.add("active");
             document.getElementById('videos').style.display = "none";
             document.getElementById('myIframe').style.display = "block";
+            document.getElementById('continueBtn').style.display = "block";
             document.getElementById("myIframe").src = "map.html";
             document.getElementById("myIframe").height = "70%";
             deselecteItems(10);
@@ -202,7 +222,8 @@ function selectedItem(item) {
 
         case "item11":
             $('html, body').animate({ scrollTop: '0px' }, 500);
-            document.getElementById("item11").classList.add("active");
+            document.getElementById("11").classList.add("active");
+            document.getElementById('continueBtn').style.display = "block";
             deselecteItems(11);
             break;
 
@@ -210,6 +231,7 @@ function selectedItem(item) {
             $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
+            document.getElementById('continueBtn').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -220,13 +242,14 @@ function selectedItem(item) {
                 ],
                 autoplay: true,
             };
-            document.getElementById("item12").classList.add("active");
+            document.getElementById("12").classList.add("active");
             deselecteItems(12);
             break;
 
         case "item13":
             $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
+            document.getElementById('continueBtn').style.display = "block";
             document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
@@ -238,22 +261,24 @@ function selectedItem(item) {
                 ],
                 autoplay: true,
             };
-            document.getElementById("item13").classList.add("active");
+            document.getElementById("13").classList.add("active");
             deselecteItems(13);
             break;
 
         case "item14":
             $('html, body').animate({ scrollTop: '0px' }, 500);
-            document.getElementById("item14").classList.add("active");
+            document.getElementById("14").classList.add("active");
+            document.getElementById('continueBtn').style.display = "block";
             deselecteItems(14);
             break;
 
         case "item15":
             player1.stop();
             $('html, body').animate({ scrollTop: '0px' }, 500);
-            document.getElementById("item15").classList.add("active");
+            document.getElementById("15").classList.add("active");
             document.getElementById('videos').style.display = "none";
             document.getElementById('myIframe').style.display = "block";
+            document.getElementById('continueBtn').style.display = "block";
             document.getElementById("myIframe").src = "component.html";
             document.getElementById("myIframe").height = "80%";
             deselecteItems(15);
@@ -261,13 +286,15 @@ function selectedItem(item) {
 
         case "item16":
             $('html, body').animate({ scrollTop: '0px' }, 500);
-            document.getElementById("item16").classList.add("active");
+            document.getElementById("16").classList.add("active");
+            document.getElementById('continueBtn').style.display = "block";
             deselecteItems(16);
             break;
 
         case "item17":
             $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
+            document.getElementById('continueBtn').style.display = "block";
             document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
@@ -279,13 +306,14 @@ function selectedItem(item) {
                 ],
                 autoplay: true,
             };
-            document.getElementById("item17").classList.add("active");
+            document.getElementById("17").classList.add("active");
             deselecteItems(17);
             break;
 
         case "item18":
             $('html, body').animate({ scrollTop: '0px' }, 500);
-            document.getElementById("item18").classList.add("active");
+            document.getElementById("18").classList.add("active");
+            document.getElementById('continueBtn').style.display = "block";
             deselecteItems(18);
             break;
 
@@ -293,6 +321,7 @@ function selectedItem(item) {
             $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
+            document.getElementById('continueBtn').style.display = "block";
             player1.source = {
                 type: 'video',
                 sources: [
@@ -303,13 +332,14 @@ function selectedItem(item) {
                 ],
                 autoplay: true,
             };
-            document.getElementById("item19").classList.add("active");
+            document.getElementById("19").classList.add("active");
             deselecteItems(19);
             break;
 
         case "item20":
             $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
+            document.getElementById('continueBtn').style.display = "none";
             document.getElementById('videos').style.display = "block";
             player1.source = {
                 type: 'video',
@@ -321,18 +351,16 @@ function selectedItem(item) {
                 ],
                 autoplay: true,
             };
-            document.getElementById("item20").classList.add("active");
+            document.getElementById("20").classList.add("active");
             deselecteItems(20);
             break;
     }
 }
 
 function deselecteItems(order) {
-    let id = "";
     for (let i = 1; i <= 20; i++) {
         if (i == order) continue;
-        id = "item" + i;
-        document.getElementById(id).classList.remove("active");
+        document.getElementById(i).classList.remove("active");
     }
 
 }
