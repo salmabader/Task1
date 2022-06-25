@@ -232,8 +232,9 @@ li:not(:last-child)::after {
     background-color: white;
 }
 
-iframe {
+.frameContainer {
     padding: 10px;
+    min-height: auto;
 }
 
 /* -------------Radio button style------------ */

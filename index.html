@@ -18,7 +18,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
-    <script>var i = 2;</script>
 </head>
 
 <body>
@@ -191,7 +190,9 @@
                 <div class="videos" id="videos">
                     <div id="content1"><video id="player1" playsinline controls></video></div>
                 </div>
-                <iframe id="myIframe" width="100%" src=""></iframe>
+                <div class="frameContainer">
+                    <iframe id="myIframe" width="100%"></iframe>
+                </div>
                 <button class="continueBtn" id="continueBtn" onclick="goNext()">Continue</button>
             </div>
         </div>
