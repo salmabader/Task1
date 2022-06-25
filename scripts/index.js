@@ -123,6 +123,7 @@ function selectedItem(item) {
             break;
 
         case "item4":
+            player1.stop();
             document.getElementById('videos').style.display = "none";
             document.getElementById('myIframe').style.display = "block";
             document.getElementById("myIframe").src = "quiz1.html";
@@ -217,6 +218,7 @@ function selectedItem(item) {
             break;
 
         case "item10":
+            player1.stop();
             document.getElementById("item10").classList.add("active");
             document.getElementById('videos').style.display = "none";
             document.getElementById('myIframe').style.display = "block";
@@ -290,6 +292,7 @@ function selectedItem(item) {
             break;
 
         case "item15":
+            player1.stop();
             document.getElementById("item15").classList.add("active");
             document.getElementById('videos').style.display = "none";
             document.getElementById('myIframe').style.display = "block";
