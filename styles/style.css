@@ -8,6 +8,7 @@ html {
     margin: 0;
 }
 
+/* --------- index.html ----------- */
 header {
     background-color: white;
     padding-top: 30px;
@@ -48,6 +49,24 @@ header {
 
 }
 
+.icon {
+    background-color: white;
+}
+
+li {
+    position: relative;
+}
+
+li:not(:last-child)::after {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 7px;
+    top: 20px;
+}
+
 .menuTitle {
     font-size: 13px;
     text-align: center;
@@ -71,6 +90,14 @@ header {
 .menu li:hover {
     color: #00b0f1;
 
+}
+
+.tabsTitle {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    margin-left: 0px;
+    vertical-align: top;
 }
 
 .componentMenu,
