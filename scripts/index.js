@@ -44,7 +44,7 @@ function sideMenu() {
     let icon = document.getElementById("lock");
     if (icon.className === "bi bi-unlock-fill") {
         icon.className = "bi bi-lock-fill";
-        sideMenu.style.height = "540px";
+        sideMenu.style.height = "45%";
         sideMenu.style.overflow = "auto";
     }
     else {
@@ -132,7 +132,6 @@ function selectedItem(item) {
             document.getElementById('myIframe').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
             document.getElementById("myIframe").src = "quiz1.html";
-            document.getElementById("myIframe").height = "60%";
             document.getElementById("4").classList.add("active");
             deselecteItems(4);
             break;
@@ -216,7 +215,6 @@ function selectedItem(item) {
             document.getElementById('myIframe').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
             document.getElementById("myIframe").src = "map.html";
-            document.getElementById("myIframe").height = "70%";
             deselecteItems(10);
             break;
 
@@ -280,7 +278,6 @@ function selectedItem(item) {
             document.getElementById('myIframe').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
             document.getElementById("myIframe").src = "component.html";
-            document.getElementById("myIframe").height = "80%";
             deselecteItems(15);
             break;
 
