@@ -33,7 +33,6 @@ document.getElementById('rect4').onmouseleave = function () {
 
 // ------ handle click on the parts -----
 document.getElementById('allTips').style.visibility = "hidden";
-let ids = ['hightemp', 'turbine', 'compressor', 'reduction', 'bleed', 'naturalgas', 'air', 'shear', 'gen1800', 'fuelInjector', 'combustionchamber'];
 document.getElementById('rect2').onclick = function () {
     document.getElementById('hightemp').style.visibility = "visible";
     hideOthers('hightemp');
@@ -78,7 +77,7 @@ document.getElementById('Path_7').onclick = function () {
     document.getElementById('combustionchamber').style.visibility = "visible";
     hideOthers('combustionchamber');
 }
-
+let ids = ['hightemp', 'turbine', 'compressor', 'reduction', 'bleed', 'naturalgas', 'air', 'shear', 'gen1800', 'fuelInjector', 'combustionchamber'];
 // --------- hide other tips ---------
 function hideOthers(id) {
     for (var i = 0; i < ids.length; i++) {
