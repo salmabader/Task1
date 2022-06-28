@@ -433,8 +433,8 @@ li:not(:last-child)::after {
     grid-auto-rows: minmax(1fr, auto);
 }
 
-/* 
-.box {
+
+/* .box {
     background-color: rgba(221, 221, 221, 0.215);
 } */
 
@@ -453,11 +453,12 @@ li:not(:last-child)::after {
     text-align: left;
     color: #045fe6;
     position: relative;
-    max-width: 400px;
+    max-width: 300px;
     width: 100%;
 }
 
-.firstContent {
+.card {
+    width: 15rem;
     display: inline-flex;
     flex-direction: row;
     align-items: center;
@@ -466,7 +467,7 @@ li:not(:last-child)::after {
     border: 0;
 }
 
-.firstContent:hover {
+.card:hover {
     background-color: rgba(255, 255, 255, 0.24);
     cursor: pointer;
 }
@@ -486,47 +487,16 @@ li:not(:last-child)::after {
     border-bottom-left-radius: 4px;
 }
 
-@keyframes zoom {
-    0% {
-        right: 0;
-    }
-
-    50% {
-        right: 15rem
-    }
-
-    50% {
-        right: 30rem
-    }
-
-    50% {
-        right: 45rem
-    }
-
-    50% {
-        right: 60rem
-    }
-
-    50% {
-        right: 75rem
-    }
-}
-
-.item {
-    width: 15rem;
-    animation: zoom 1s ease;
-}
-
 .card-text {
     text-align: center;
 }
 
 .card2 {
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 .card4 {
-    padding-top: 190px;
+    padding-top: 220px;
 }
 
 .card5 {
@@ -545,8 +515,8 @@ li:not(:last-child)::after {
 }
 
 .card3 {
-    padding-right: 30px;
-    padding-top: 300px;
+    padding-right: 130px;
+    padding-top: 320px;
 }
 
 .myRow {
@@ -558,17 +528,22 @@ li:not(:last-child)::after {
 .leftArrow,
 .rightArrow {
     color: rgba(255, 255, 255, 0.546);
+    background-color: transparent;
+    border: 0;
+    transition: all 0.08s ease-in;
+}
+
+.leftArrow.inactive,
+.rightArrow.inactive {
+    color: rgba(255, 255, 255, 0.272);
+    cursor: default;
+    background-color: transparent;
+    border: 0;
+    transition: all 0.08s ease-in;
 }
 
 :where(.leftArrow, .rightArrow):hover {
     color: white;
-    cursor: pointer;
-}
-
-:where(.leftArrow, .rightArrow).inactive {
-    color: white;
-    opacity: .25;
-    cursor: default;
 }
 
 .footer {
