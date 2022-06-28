@@ -282,9 +282,13 @@ function selectedItem(item) {
             break;
 
         case "item16":
+            player1.stop();
             $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById("16").classList.add("active");
+            document.getElementById('videos').style.display = "none";
+            document.getElementById('myIframe').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
+            document.getElementById("myIframe").src = "selection.html";
             deselecteItems(16);
             break;
 

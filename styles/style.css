@@ -213,7 +213,7 @@ li:not(:last-child)::after {
     margin-bottom: 60px;
 }
 
-:where(.hint, .instruction)>i {
+:where(.hint, .instruction, .hintSelection)>i {
     font-family: impact;
     border-radius: 100%;
     color: white;
@@ -410,4 +410,193 @@ li:not(:last-child)::after {
 #rect4 {
     fill: #fcbf49;
     cursor: pointer;
+}
+
+/* ------------ selection.html ------------- */
+#selectionBody {
+    background-color: #2CA3B9;
+}
+
+.mainImg {
+    background-image: url("../images/System_Selection_Box.png");
+    background-size: 1400px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 2400px;
+}
+
+
+.myContainer {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(1fr, auto);
+}
+
+/* 
+.box {
+    background-color: rgba(221, 221, 221, 0.215);
+} */
+
+.title {
+    font-size: 18px;
+    line-height: 20px;
+    color: white;
+    margin-top: 110px;
+    padding-left: 50px;
+}
+
+.hintSelection {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 16px;
+    text-align: left;
+    color: #045fe6;
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+}
+
+.firstContent {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.144);
+    border: 0;
+}
+
+.firstContent:hover {
+    background-color: rgba(255, 255, 255, 0.24);
+    cursor: pointer;
+}
+
+.firstContent .item {
+    display: none;
+}
+
+.firstContent .item.show {
+    display: block;
+}
+
+
+.card-body {
+    background-color: white;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+@keyframes zoom {
+    0% {
+        right: 0;
+    }
+
+    50% {
+        right: 15rem
+    }
+
+    50% {
+        right: 30rem
+    }
+
+    50% {
+        right: 45rem
+    }
+
+    50% {
+        right: 60rem
+    }
+
+    50% {
+        right: 75rem
+    }
+}
+
+.item {
+    width: 15rem;
+    animation: zoom 1s ease;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.card2 {
+    padding-top: 60px;
+}
+
+.card4 {
+    padding-top: 190px;
+}
+
+.card5 {
+    padding-top: 220px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.card3 {
+    padding-right: 30px;
+    padding-top: 300px;
+}
+
+.myRow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+}
+
+.leftArrow,
+.rightArrow {
+    color: rgba(255, 255, 255, 0.546);
+}
+
+:where(.leftArrow, .rightArrow):hover {
+    color: white;
+    cursor: pointer;
+}
+
+:where(.leftArrow, .rightArrow).inactive {
+    color: white;
+    opacity: .25;
+    cursor: default;
+}
+
+.footer {
+    border-top: 1px gainsboro dashed;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: right;
+    padding-right: 30px;
+}
+
+.buttons {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    gap: 20px;
+    justify-content: left;
+    align-items: left;
+}
+
+.myBtn {
+    box-shadow: 2px 2px 0 0 rgb(0 0 0 / 10%);
+    text-transform: uppercase;
+    border-radius: 16px;
+    border: 0;
+}
+
+.myBtn:hover {
+    background-color: #6dcdd8;
+    color: white;
 }
