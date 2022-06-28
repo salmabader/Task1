@@ -1,5 +1,10 @@
-// handle first card
+// -------- diable the three buttons ----------
+let btns = document.querySelector('.buttons').children;
+for (let i = 0; i < btns.length; i++) {
+    btns[i].disabled = true;
+}
 
+// -------- handle first card --------
 var slides = document.querySelector('.firstContent').children;
 var nextSlide = document.querySelector("#right1");
 var prevSlide = document.querySelector("#left1");
@@ -22,11 +27,11 @@ function next(direction) {
         if (index == totalSlides) {
             index = totalSlides - 1;
         }
+        prevSlide.classList.remove('inactive');
     }
     else {
-        if (index == 0) {
+        if (index == 1) {
             prevSlide.classList.add('inactive');
-            nextSlide.classList.remove('inactive');
         }
         if (index == 0) {
             index = 0;
@@ -34,25 +39,10 @@ function next(direction) {
         else {
             index--;
         }
+        nextSlide.classList.remove('inactive');
     }
-
     for (i = 0; i < slides.length; i++) {
         slides[i].classList.remove("show");
     }
     slides[index].classList.add("show");
-
 }
-
-
-
-
-
-
-
-
-
-
-
-document.getElementById("btn1").disabled = true;
-document.getElementById("btn2").disabled = true;
-document.getElementById("btn3").disabled = true;
