@@ -116,6 +116,7 @@ li:not(:last-child)::after {
     border-radius: 16px;
     margin-top: 40px;
     margin-right: 40px;
+    margin-bottom: 40px;
     float: right;
     box-shadow: 2px 2px 0 0 rgb(0 0 0 / 10%);
     background-color: #045fe6;

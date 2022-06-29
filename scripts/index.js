@@ -69,7 +69,6 @@ function goNext() {
 function selectedItem(item) {
     switch (item) {
         case "item1":
-            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
@@ -84,11 +83,11 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("1").classList.add("active");
+            loading(1, 'video');
             deselecteItems(1);
             break;
 
         case "item2":
-            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
@@ -103,11 +102,11 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("2").classList.add("active");
+            loading(2, 'video');
             deselecteItems(2);
             break;
 
         case "item3":
-            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
@@ -122,22 +121,22 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("3").classList.add("active");
+            loading(3, 'video');
             deselecteItems(3);
             break;
 
         case "item4":
             player1.stop();
-            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('videos').style.display = "none";
             document.getElementById('myIframe').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
             document.getElementById("myIframe").src = "quiz1.html";
             document.getElementById("4").classList.add("active");
+            loading(4, 'quiz');
             deselecteItems(4);
             break;
 
         case "item5":
-            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
@@ -152,18 +151,20 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("5").classList.add("active");
+            loading(5, 'video');
             deselecteItems(5);
             break;
 
         case "item6":
-            $('html, body').animate({ scrollTop: '0px' }, 500);
-            document.getElementById("6").classList.add("active");
+            document.getElementById('videos').style.display = "none";
+            document.getElementById('myIframe').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
+            document.getElementById("myIframe").src = "quiz1.html";
+            loading(6, 'quiz');
             deselecteItems(6);
             break;
 
         case "item7":
-            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
@@ -178,11 +179,11 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("7").classList.add("active");
+            loading(7, 'video');
             deselecteItems(7);
             break;
 
         case "item8":
-            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
@@ -197,40 +198,42 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("8").classList.add("active");
+            loading(8, 'video');
             deselecteItems(8);
             break;
 
         case "item9":
-            $('html, body').animate({ scrollTop: '0px' }, 500);
-            document.getElementById("9").classList.add("active");
+            document.getElementById('videos').style.display = "none";
+            document.getElementById('myIframe').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
+            document.getElementById("myIframe").src = "quiz1.html";
+            loading(9, 'quiz');
             deselecteItems(9);
             break;
 
         case "item10":
-            $('html, body').animate({ scrollTop: '0px' }, 500);
             player1.stop();
             document.getElementById("10").classList.add("active");
             document.getElementById('videos').style.display = "none";
             document.getElementById('myIframe').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
             document.getElementById("myIframe").src = "map.html";
+            loading(10, 'game');
             deselecteItems(10);
             break;
 
         case "item11":
-            $('html, body').animate({ scrollTop: '0px' }, 500);
             player1.stop();
             document.getElementById("11").classList.add("active");
             document.getElementById('videos').style.display = "none";
             document.getElementById('myIframe').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
             document.getElementById("myIframe").src = "systemComponent.html";
+            loading(11, 'game');
             deselecteItems(11);
             break;
 
         case "item12":
-            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
@@ -245,11 +248,11 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("12").classList.add("active");
+            loading(12, 'video');
             deselecteItems(12);
             break;
 
         case "item13":
-            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('continueBtn').style.display = "block";
             document.getElementById('videos').style.display = "block";
@@ -264,40 +267,42 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("13").classList.add("active");
+            loading(13, 'video');
             deselecteItems(13);
             break;
 
         case "item14":
-            $('html, body').animate({ scrollTop: '0px' }, 500);
-            document.getElementById("14").classList.add("active");
+            document.getElementById('videos').style.display = "none";
+            document.getElementById('myIframe').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
+            document.getElementById("myIframe").src = "quiz1.html";
+            loading(14, 'quiz');
             deselecteItems(14);
             break;
 
         case "item15":
             player1.stop();
-            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById("15").classList.add("active");
             document.getElementById('videos').style.display = "none";
             document.getElementById('myIframe').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
             document.getElementById("myIframe").src = "component.html";
+            loading(15, 'game');
             deselecteItems(15);
             break;
 
         case "item16":
             player1.stop();
-            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById("16").classList.add("active");
             document.getElementById('videos').style.display = "none";
             document.getElementById('myIframe').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
             document.getElementById("myIframe").src = "selection.html";
+            loading(16, 'game');
             deselecteItems(16);
             break;
 
         case "item17":
-            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('continueBtn').style.display = "block";
             document.getElementById('videos').style.display = "block";
@@ -312,18 +317,20 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("17").classList.add("active");
+            loading(17, 'video');
             deselecteItems(17);
             break;
 
         case "item18":
-            $('html, body').animate({ scrollTop: '0px' }, 500);
-            document.getElementById("18").classList.add("active");
+            document.getElementById('videos').style.display = "none";
+            document.getElementById('myIframe').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
+            document.getElementById("myIframe").src = "quiz1.html";
+            loading(18, 'quiz');
             deselecteItems(18);
             break;
 
         case "item19":
-            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('videos').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
@@ -338,11 +345,11 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("19").classList.add("active");
+            loading(19, 'video');
             deselecteItems(19);
             break;
 
         case "item20":
-            $('html, body').animate({ scrollTop: '0px' }, 500);
             document.getElementById('myIframe').style.display = "none";
             document.getElementById('continueBtn').style.display = "none";
             document.getElementById('videos').style.display = "block";
@@ -357,6 +364,7 @@ function selectedItem(item) {
                 autoplay: true,
             };
             document.getElementById("20").classList.add("active");
+            loading(20, 'video');
             deselecteItems(20);
             break;
     }
@@ -368,4 +376,32 @@ function deselecteItems(order) {
         document.getElementById(i).classList.remove("active");
     }
 
+}
+
+function loading(id, dis) {
+    document.getElementById(id).getElementsByClassName("icon")[0].classList.add("spinner-border");
+    if (dis == 'video') {
+        document.getElementById(id).getElementsByClassName("icon")[0].classList.remove("bi-play-circle");
+        player1.on('playing', () => {
+            document.getElementById(id).getElementsByClassName("icon")[0].classList.remove("spinner-border");
+            document.getElementById(id).getElementsByClassName("icon")[0].classList.add("bi-play-circle");
+            $('html, body').animate({ scrollTop: '0px' }, 500);
+        });
+    }
+    else if (dis == 'quiz') {
+        document.getElementById(id).getElementsByClassName("icon")[0].classList.remove("bi-question-circle");
+        $("#myIframe").on("load", function () {
+            document.getElementById(id).getElementsByClassName("icon")[0].classList.remove("spinner-border");
+            document.getElementById(id).getElementsByClassName("icon")[0].classList.add("bi-question-circle");
+            $('html, body').animate({ scrollTop: '0px' }, 500);
+        });
+    }
+    else {
+        document.getElementById(id).getElementsByClassName("icon")[0].classList.remove("bi-binoculars");
+        $("#myIframe").on("load", function () {
+            document.getElementById(id).getElementsByClassName("icon")[0].classList.remove("spinner-border");
+            document.getElementById(id).getElementsByClassName("icon")[0].classList.add("bi-binoculars");
+            $('html, body').animate({ scrollTop: '0px' }, 500);
+        });
+    }
 }
