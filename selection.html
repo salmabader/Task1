@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" />
     <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Selection</title>
 </head>
 
@@ -324,8 +325,8 @@
         <div class="box"></div>
         <div class="box buttons">
             <button class="btn btn-light myBtn" id="btn1" onclick="checkAnswers()" disabled>SUBMIT</button>
-            <button class="btn btn-light myBtn" id="btn2" disabled>TRY AGAIN</button>
-            <button class="btn btn-light myBtn" id="btn3" disabled>SOLUTION</button>
+            <button class="btn btn-light myBtn" id="btn2" onclick="tryAgain()" disabled>TRY AGAIN</button>
+            <button class="btn btn-light myBtn" id="btn3" onclick="showSolution()" disabled>SOLUTION</button>
         </div>
     </div>
     <script src="scripts/selection.js"></script>
