@@ -220,8 +220,12 @@ function selectedItem(item) {
 
         case "item11":
             $('html, body').animate({ scrollTop: '0px' }, 500);
+            player1.stop();
             document.getElementById("11").classList.add("active");
+            document.getElementById('videos').style.display = "none";
+            document.getElementById('myIframe').style.display = "block";
             document.getElementById('continueBtn').style.display = "block";
+            document.getElementById("myIframe").src = "systemComponent.html";
             deselecteItems(11);
             break;
 
