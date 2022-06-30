@@ -662,6 +662,6 @@ li:not(:last-child)::after {
     top: 63px;
 }
 
-.modal-content {
-    border: 3px solid #fcbf49;
+.border {
+    border: 3px solid #fcbf49 !important;
 }
