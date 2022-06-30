@@ -382,11 +382,11 @@ function loading(id, dis) {
     document.getElementById(id).getElementsByClassName("icon")[0].classList.add("spinner-border");
     if (dis == 'video') {
         document.getElementById(id).getElementsByClassName("icon")[0].classList.remove("bi-play-circle");
-        player1.on('playing', () => {
+        player1.on('ready', () => {
             document.getElementById(id).getElementsByClassName("icon")[0].classList.remove("spinner-border");
             document.getElementById(id).getElementsByClassName("icon")[0].classList.add("bi-play-circle");
-            $('html, body').animate({ scrollTop: '0px' }, 500);
         });
+        $('html, body').animate({ scrollTop: '0px' }, 500);
     }
     else if (dis == 'quiz') {
         document.getElementById(id).getElementsByClassName("icon")[0].classList.remove("bi-question-circle");
