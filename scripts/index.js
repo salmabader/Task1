@@ -385,8 +385,8 @@ function loading(id, dis) {
         player1.on('ready', () => {
             document.getElementById(id).getElementsByClassName("icon")[0].classList.remove("spinner-border");
             document.getElementById(id).getElementsByClassName("icon")[0].classList.add("bi-play-circle");
+            $('html, body').animate({ scrollTop: '0px' }, 500);
         });
-        $('html, body').animate({ scrollTop: '0px' }, 500);
     }
     else if (dis == 'quiz') {
         document.getElementById(id).getElementsByClassName("icon")[0].classList.remove("bi-question-circle");
