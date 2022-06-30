@@ -623,16 +623,19 @@ li:not(:last-child)::after {
     line-height: 30px;
 }
 
-.sysContainer {
+.diagram {
     display: flex;
+    row-gap: 80px;
     flex-direction: column;
-    justify-content: space-between;
-
+    justify-items: center;
+    align-items: center;
+    position: relative;
 }
 
 .sqr {
     border: 2px solid white;
     font-size: 18px;
+    width: 270px;
     display: inline-block;
     padding: 17px 25px;
     margin-right: 10px;
@@ -642,4 +645,23 @@ li:not(:last-child)::after {
     text-decoration: none;
     border-radius: 16px;
     cursor: pointer;
+    position: relative;
+}
+
+.sqr:hover {
+    border: 2px solid #fcbf49;
+}
+
+.sqr:not(:last-child)::after {
+    content: "";
+    height: 180%;
+    width: 2px;
+    background: white;
+    position: absolute;
+    left: 130px;
+    top: 63px;
+}
+
+.modal-content {
+    border: 3px solid #fcbf49;
 }

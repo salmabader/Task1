@@ -21,17 +21,83 @@
     <div class="sysText">
         Typical basic schematic diagram of SEC generating system is shown in the image.
     </div>
-    <!-- <div class="sysContainer">
-        <div class="sqr">Turbine</div>
-        <div class="sideTxt">Mechanical Coupling</div>
-        <div class="sqr">Generator</div>
-        <div class="sqr">Unit Auxiliaries</div>
-        <div class="sideTxt">BUS DUCT (Insulation Design Mechanical Construction)</div>
-        <div class="sqr">Generator Circuit Breaker</div>
-        <div class="sideTxt">(Optional Requirements)(Heavy Duty)(High Fault Level)</div>
-        <div class="sqr">Transformer</div>
-        <div class="sideTxt">(Up to Utilization Voltage Single/Double Winding)</div>
-    </div> -->
+    <div class="diagram">
+        <div class="sqr" data-bs-toggle="modal" data-bs-target="#pop1">Turbine</div>
+        <div class="sqr" data-bs-toggle="modal" data-bs-target="#pop2">Generator</div>
+        <div class="sqr" data-bs-toggle="modal" data-bs-target="#pop3">Unit Auxiliaries</div>
+        <div class="sqr" data-bs-toggle="modal" data-bs-target="#pop4">Generator Circuit Breaker</div>
+        <div class="sqr" data-bs-toggle="modal" data-bs-target="#pop5">Transformer</div>
+    </div>
+    <div class="instruction" style="float:right ;">
+        <i class="bi bi-exclamation-circle-fill"></i>
+        <p>Click or tap the components to learn more.</p>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="pop1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel"><b>Turbine</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="msg">The turbine is driven by Prime Mover.</div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="pop2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel"><b>Generator</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="msg">The generator normally generates at 11-13kV.</div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="pop3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel"><b>Unit Auxiliaries</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="msg">Provide power to the auxiliary equipment of the power generating
+                    station during its normal operation. A unit auxiliary transformer (UAT) is connected to the
+                    generator terminal to feed plant auxiliary loads.</div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="pop4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel"><b>Generator Circuit Breaker</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="msg">Generator circuit breaker operates at 13kV</div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="pop5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel"><b>Transformer</b></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="msg">
+                    * Main Transformer – from 11kV-115/230kV
+                    <br>* Unit Transformer - for unit loads<br>
+                    * Bus- Switchgear 13kv-600v
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
